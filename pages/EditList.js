@@ -1,3 +1,11 @@
+import Head from "next/head";
+
 export default function EditList() {
-  return <div>Editar Lista</div>;
+  return (
+    <div>
+      <Head>
+        <title>Editar Lista</title>
+      </Head>
+    </div>
+  );
 }
