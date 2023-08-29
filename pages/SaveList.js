@@ -9,11 +9,11 @@ export default function SaveList() {
 
       <form className="mx-auto my-4" style={{ maxWidth: "500px" }}>
         <div class="form-group">
-          <label htmlFor="formGroupExampleInput">Nombre de la lista</label>
+          <label htmlFor="name">Nombre de la lista</label>
           <input
             type="text"
             class="form-control"
-            id="formGroupExampleInput"
+            id="name"
             placeholder="Ingrese el nombre"
           />
         </div>
