@@ -22,7 +22,12 @@ export default function ProductItem({
         <p className="card-text" title={product.lastUpdate}>
           {product.lastUpdate}
         </p>
-        <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+        <div className="d-grid gap-2 d-md-flex justify-content-between">
+          <Link href="/EditList">
+            <button className="btn btn-dark" type="button">
+              Editar
+            </button>
+          </Link>
           <button
             className="btn btn-dark"
             type="button"

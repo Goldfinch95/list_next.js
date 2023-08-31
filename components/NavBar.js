@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link href="/" className="navbar-brand">
-        Product
+        Listas
       </Link>
       <button
         className="navbar-toggler"
@@ -24,18 +24,8 @@ export default function Navbar() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link href="/ShowList" className="nav-link">
-              Listas
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link href="/SaveList" className="nav-link">
               Cargar
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link href="/EditList" className="nav-link">
-              Editar
             </Link>
           </li>
         </ul>

@@ -17,7 +17,7 @@ export default function Files({ products }) {
           <tr key={product.code}>
             <td>{product.code}</td>
             <td>{product.name}</td>
-            <td>{product.price}</td>
+            <td>${product.price}</td>
             <td>{product.list}</td>
             <td>{product.lastUpdate}</td>
           </tr>
