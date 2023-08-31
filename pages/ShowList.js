@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import ProductItem from "@/components/ProductItem";
+import Files from "@/components/Files";
 
 const products = [
   {
@@ -49,14 +50,23 @@ const products = [
 
 export default function ShowList() {
   const [list, setList] = useState("");
+  const [visibleProduct, setVisibleProduct] = useState(null);
   return (
-    <div className="products">
-      <Head>
-        <title>Listas</title>
-      </Head>
-      {products.map((product) => (
-        <ProductItem key={product._id} product={product} />
-      ))}
+    <div>
+      <div className="products">
+        <Head>
+          <title>Listas</title>
+        </Head>
+        {products.map((product) => (
+          <ProductItem
+            key={product._id}
+            product={product}
+            visibleProduct={visibleProduct}
+            setVisibleProduct={setVisibleProduct}
+          />
+        ))}
+      </div>
+      <div>{visibleProduct && <Files products={[visibleProduct]} />}</div>
     </div>
   );
 }
