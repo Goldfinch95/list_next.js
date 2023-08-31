@@ -8,42 +8,42 @@ const products = [
     code: "A1",
     name: "Guantes de boxeo everlast powerlock",
     price: 96.456,
-    list: "listaDeGuantesDeBox",
+    list: "Guantes de Box",
     lastUpdate: "31/8/23",
   },
   {
     code: "B2",
     name: "Jujutsu Kaisen 10",
     price: 2500,
-    list: "listaDeMangas",
+    list: "Mangas",
     lastUpdate: "31/8/23",
   },
   {
     code: "C3",
     name: "Bufanda Ravenclaw Harry Potter",
     price: 11490,
-    list: "listaDeBufandas",
+    list: "Bufandas",
     lastUpdate: "31/8/23",
   },
   {
     code: "D4",
     name: "Humankind Deluxe Edition",
     price: 18.699,
-    list: "listaDeJuegosDePc",
+    list: "Juegos De Pc",
     lastUpdate: "31/8/23",
   },
   {
     code: "E5",
     name: "Sony PlayStation 5",
     price: 627.999,
-    list: "listaDeConsolas",
+    list: "Consolas",
     lastUpdate: "31/8/23",
   },
   {
     code: "F6",
     name: "Mouse gamer de juego Logitech G Series Hero G502 kda",
     price: 53.761,
-    list: "listaMouse",
+    list: "Mouse",
     lastUpdate: "31/8/23",
   },
 ];
@@ -51,6 +51,7 @@ const products = [
 export default function Home() {
   const [list, setList] = useState("");
   const [visibleProduct, setVisibleProduct] = useState(null);
+
   return (
     <div>
       <div className="products">
@@ -59,10 +60,11 @@ export default function Home() {
         </Head>
         {products.map((product) => (
           <ProductItem
-            key={product._id}
+            key={product.code}
             product={product}
             visibleProduct={visibleProduct}
             setVisibleProduct={setVisibleProduct}
+            listName={product.list}
           />
         ))}
       </div>

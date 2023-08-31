@@ -4,6 +4,7 @@ export default function ProductItem({
   product,
   visibleProduct,
   setVisibleProduct,
+  listName,
 }) {
   const handleToggleFiles = () => {
     if (visibleProduct === product) {
@@ -23,9 +24,14 @@ export default function ProductItem({
           {product.lastUpdate}
         </p>
         <div className="d-grid gap-2 d-md-flex justify-content-between">
-          <Link href="/EditList">
+          <Link
+            href={{
+              pathname: "/EditList",
+              query: { listName: product.list }, // Pasar el nombre de la lista como query param
+            }}
+          >
             <button className="btn btn-dark" type="button">
-              Editar
+              Editar {}
             </button>
           </Link>
           <button
