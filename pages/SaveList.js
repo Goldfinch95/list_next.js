@@ -27,7 +27,7 @@ export default function SaveList() {
             id="exampleFormControlFile1"
           />
         </div>
-        <button type="submit" className="btn btn-info w-100">
+        <button type="submit" className="btn btn-dark w-100">
           Enviar
         </button>
       </form>

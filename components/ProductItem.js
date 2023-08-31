@@ -24,7 +24,7 @@ export default function ProductItem({
         </p>
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
           <button
-            className="btn btn-info"
+            className="btn btn-dark"
             type="button"
             onClick={handleToggleFiles}
           >
