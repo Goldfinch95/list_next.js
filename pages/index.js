@@ -3,7 +3,21 @@ import { useState } from "react";
 import ProductItem from "@/components/ProductItem";
 import Files from "@/components/Files";
 
-const products = [
+/*const products = [
+  {
+    code: "A1",
+    name: "Guantes de boxeo everlast powerlock",
+    price: 96.456,
+    list: "Guantes de Box",
+    lastUpdate: "31/8/23",
+  },
+  {
+    code: "A1",
+    name: "Guantes de boxeo everlast powerlock",
+    price: 96.456,
+    list: "Guantes de Box",
+    lastUpdate: "31/8/23",
+  },
   {
     code: "A1",
     name: "Guantes de boxeo everlast powerlock",
@@ -46,13 +60,22 @@ const products = [
     list: "Mouse",
     lastUpdate: "31/8/23",
   },
-];
+];*/
 
 export default function Home() {
-  const [list, setList] = useState("");
-  const [visibleProduct, setVisibleProduct] = useState(null);
+  //const [list, setList] = useState("");
+  //const [visibleProduct, setVisibleProduct] = useState(null);
 
   return (
+    <div>
+      <div className="products">
+        <Head>
+          <title>Listas</title>
+        </Head>
+      </div>
+    </div>
+  );
+  /*(
     <div>
       <div className="products">
         <Head>
@@ -70,5 +93,5 @@ export default function Home() {
       </div>
       <div>{visibleProduct && <Files products={[visibleProduct]} />}</div>
     </div>
-  );
+  );*/
 }

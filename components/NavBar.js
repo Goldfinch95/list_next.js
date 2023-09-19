@@ -24,8 +24,8 @@ export default function Navbar() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link href="/SaveList" className="nav-link">
-              Cargar
+            <Link href="/save_list" className="nav-link">
+              <i className="bi bi-file-earmark-arrow-up-fill"></i>
             </Link>
           </li>
         </ul>
